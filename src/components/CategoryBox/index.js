@@ -1,0 +1,20 @@
+import React from "react";
+import { Pressable, Image, Text, View } from "react-native";
+import { colors } from "@utils/colors"
+import { styles } from "./styles";
+
+const CategoryBox = ({ title, image, onPress, isSelected }) => {
+    const imageSource = typeof image === 'string' && image.startsWith('http') ? { uri: image } : image;
+    
+    return (
+        <Pressable onPress={onPress} style={styles.container}>
+            <View style={[styles.imageContainer, isSelected ?
+                {backgroundColor : colors.blue} : {}]}>
+                <Image style={styles.image} source={imageSource} />
+            </View>
+            <Text style={[styles.title, isSelected ? {color: colors.blue, fontWeight: "500"} : {}]}>{title}</Text>
+        </Pressable>
+    )
+}
+
+export default React.memo(CategoryBox);
