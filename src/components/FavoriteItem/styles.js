@@ -31,5 +31,10 @@ export const styles = StyleSheet.create({
     icon: {
         width: 24,
         height: 24
+    },
+    removeButton: {
+        padding: 4,
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 })
