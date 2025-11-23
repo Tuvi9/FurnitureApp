@@ -2,6 +2,21 @@
 
 This is a React Native app I made for a school project. It's basically a furniture marketplace where people can buy and sell furniture. The design is based on a Figma prototype we got, and I built it to work on mobile devices.
 
+## Project Similarity Clarification
+
+This project was built from a course assignment using a shared Figma prototype.
+
+### Parts that are shared
+- React Native / Expo starter setup
+- Folder structure (screens, components, assets)
+- Basic login and signup forms
+- Initial navigation and screen layout
+
+### Parts that are written by me:
+- **Favorites functionality and state handling** - Custom implementation for adding/removing favorites with state management
+- **Creating listings with image upload** - Full implementation of the listing creation flow with image picker integration
+- **Search and category filter logic** - Custom search functionality and category filtering system
+
 ## What it does
 
 The app lets users browse furniture, search for items, and create their own listings. You can also favorite items, contact sellers, and manage your profile. It has all the basic features you'd expect from a marketplace app.
